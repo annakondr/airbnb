@@ -1,6 +1,10 @@
+@font-face {
+  font-family: "AvenirBook";
+  src: url(https://github.com/potyt/fonts/blob/master/macfonts/Avenir/Avenir-Book.ttf) format("truetype");
+}
 :root {
   margin: 0;
-  font-family: Nunito sans-serif;
+  font-family: "AvenirBook";
   color: #3D4E61;
   font-size: 16px;
 }
@@ -11,8 +15,8 @@
 }
 
 .text-content, .describe-room {
-  width: 491.09px;
-  height: 120.42px;
+  width: 491px;
+  height: 121px;
 }
 
 p, h1, h2, h3 {
@@ -29,18 +33,18 @@ main {
 
 h1 {
   margin-top: 0;
-  margin-bottom: 10.16px;
+  margin-bottom: 10px;
   font-size: 36px;
-  height: 48.84px;
+  height: 49px;
 }
 
-span {
+.light-color {
   color: #687C94;
 }
 
 .title-text {
-  width: 176.26px;
-  height: 28.95px;
+  width: 176px;
+  height: 29px;
   margin: 0;
 }
 
@@ -48,41 +52,48 @@ ul {
   list-style: none;
   display: flex;
   padding: 0;
-  margin-top: 15.05;
-  margin-bottom: 28.05px;
+  margin-top: 15px;
+  margin-bottom: 28px;
 }
 
 li {
-  width: 81.51px;
+  width: 82px;
 }
 
 .describe-room {
   line-height: 24px;
-  margin-bottom: 5.58px;
+  margin-bottom: 6px;
 }
 
 h3 {
   margin: 0;
   font-size: 20px;
-  margin-top: 44.05px;
-  width: 117.35px;
-  height: 28.95px;
+  margin-top: 44px;
+  width: 117px;
+  height: 29px;
 }
 
 .amenitiese {
   display: grid;
-  grid-template-columns: 176.2px 176.2px;
-  grid-template-rows: 28.95px 28.95px;
-  grid-gap: 13.05px 19.74px;
+  grid-template-columns: 176px 176px;
+  grid-template-rows: 29px 29px;
+  grid-gap: 13px 20px;
   margin-top: 21px;
+}
+.amenitiese .bold-text {
+  font-size: 17px;
 }
 
 h2 {
   font-size: 28px;
 }
 
+.bold-text {
+  font-weight: bold;
+}
+
 .feedback {
-  margin-top: 66.05px;
+  margin-top: 66px;
 }
 
 .custom-feedback {
@@ -109,15 +120,15 @@ h2 {
 }
 
 .custom-name {
-  width: 179.65px;
-  height: 29.17px;
-  font-size: 20px;
+  width: 180px;
+  height: 25px;
+  font-size: 15px;
 }
 
 .feedback-date {
-  width: 163.39px;
-  height: 29.41px;
-  font-size: 14px;
+  width: 163px;
+  height: 29px;
+  font-size: 20px;
 }
 
 .text-content {
@@ -126,28 +137,27 @@ h2 {
 }
 
 .feedback-content {
-  margin-top: 13.59px;
+  margin-top: 14px;
 }
 
 .adress {
   position: relative;
-  margin-top: 14.58;
+  margin-top: 15px;
 }
 
 .title-adress {
-  width: 196.33px;
+  width: 196px;
   height: 28px;
   font-family: Roboto;
   font-weight: bold;
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 15px;
 }
 
 .small-text {
-  width: 163.29;
-  height: 29.41;
-  color: #687C94;
-  margin-bottom: 6.59px;
+  width: 163px;
+  height: 29px;
+  margin-bottom: 7px;
 }
 
 .contact-host {
