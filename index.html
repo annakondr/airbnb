@@ -5,24 +5,105 @@
   <title>AirBnB</title>
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/footer-header.css">
+  <link rel="stylesheet" href="styles/general.css">
   <link href="https://github.com/potyt/fonts/tree/master/macfonts/Avenir" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 </head>
+
 <body>
+<div class="total-container">
 <header>
   <nav class="navbar">
     <img class="logo" src="images/Rectangle 2.png" alt="logo">
-    <ul class="navMenu">
-      <li><a href="#">Become a host</a></li>
-      <li><a href="#">Trips</a></li>
-      <li><a href="#">Messages</a></li>
-      <li><a href="#"><img class="avatar" src="images/Ellipse.svg" alt="avatar"></a></li>
-    </ul>
+    <div class="navMenu">
+      <div><a href="#">Become a host</a></div>
+      <div><a href="#">Trips</a></div>
+      <div><a href="#">Messages</a></div>
+      <div><a href="#"><img class="avatar" src="images/Ellipse.svg" alt="avatar"></a></div>
+    </div>
 
   </nav>
 </header>
+<img class="apartment-photo" src="images/Image.png" alt="photo of apartments">
 
+<div class="main-and-footer">
+  <main>
 
+    <article class="left-collumn">
+      <h1>Quiet apartment</h1>
+      <p class="title-text light-color">Entire apartment</p>
+      <ul class="contain-room">
+        <li>4 guests</li>
+        <li>1 bed</li>
+        <li>1 bath</li>
+      </ul>
+      <div class="describe-room">City Apartment is newly renovated in the heart of Budapest,
+        right in the city center. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+      <p class="title-text bold-text">Contact host</p>
+        <h3>Amenities</h3>
+      <div class="amenitiese">
+        <p class="title-text">Elevator</p>
+        <p class="title-text">Washer</p>
+        <p class="title-text">Hair dryer</p>
+        <p class="title-text">Kitchen</p>
+        <p class="title-text bold-text">Show All Amenities</p>
+      </div>
+
+      <section class="feedback">
+        <h2 class="title-feedback">Reviews</h2>
+        <div class="custom-feedback">
+          <div class="custom-photo"></div>
+          <div class="custom">
+              <div class="custom-name">John</div>
+              <div class="feedback-date">September 2016</div>
+            </div>
+          <div class="feedback-content text-content">
+              Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam.
+          </div>
+        </div>
+        <div class="custom-feedback">
+          <div class="custom-photo"></div>
+          <div class="custom">
+            <div class="custom-name">John</div>
+            <div class="feedback-date">September 2016</div>
+          </div>
+          <div class="feedback-content text-content">
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam.
+          </div>
+        </div>
+      </section>
+      <section class="adress">
+        <h2 class="title-adress">Hosted by Jane</h2>
+        <p class="small-text">Budapest, Hungary</p>
+        <p class="text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
+        <button class="contact-host">Contact Host</button>
+      </section>
+    </article>
+
+    <aside class="right-collumn">
+      <div class="order-form">
+      <form>
+        <p>25$ per night</p>
+        <label for="field-date">
+            <input type="text" id="field-date" placeholder="Date" class="input">
+        </label>
+        <br>
+        <label for="field-name">
+          <input type="text" id="field-name" placeholder="Gueasts" class="input">
+        </label>
+        <br>
+        <button type="submit" class="book">Book</button>
+      </form>
+    </div>
+    </aside>
+  </main>
 
 <footer>
   <div class="footerMenu">
@@ -50,5 +131,8 @@
   </div>
 
 </footer>
+
+</div>
+</div>
 </body>
 </html>

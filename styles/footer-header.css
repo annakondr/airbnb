@@ -1,10 +1,5 @@
-:root {
-  margin: 0;
-  font-family: "Avenir Black", sans-serif;
-}
-
-body {
-  margin: 0;
+* {
+  box-sizing: border-box;
 }
 
 .navbar {
@@ -12,27 +7,22 @@ body {
   justify-content: space-between;
 }
 .navbar .navMenu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  display: flex;
 }
-.navbar .navMenu li {
-  float: left;
+.navbar .navMenu div {
+  margin: 15px 20px 0;
 }
-.navbar .navMenu li a {
+.navbar .navMenu div a {
   display: block;
   text-decoration: none;
   font-size: 16px;
   color: #3D4E61;
-  margin: 15px;
-  margin-bottom: 0;
 }
-.navbar .navMenu li .avatar {
+.navbar .navMenu div .avatar {
   width: 30px;
 }
-.navbar .navMenu li a:not(.avatar) {
+.navbar .navMenu div a:not(.avatar) {
   line-height: 30px;
-  text-align: center;
 }
 
 .logo {
@@ -45,18 +35,19 @@ body {
 footer {
   box-sizing: border-box;
   position: absolute;
-  bottom: 34px;
-  width: 100%;
+  bottom: 0;
+  width: 98%;
   background: #FFFFFF;
   box-shadow: 0px -1px 0px #E1E7ED;
-  padding: 0 20px;
+  padding: 0;
+  height: 213px;
 }
 footer .footerMenu {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
-  margin: 40px auto;
-  max-width: 840px;
+  margin: 40px auto 0;
+  max-width: 901px;
 }
 footer .footerMenu div {
   display: flex;
@@ -64,6 +55,7 @@ footer .footerMenu div {
 }
 footer .footerMenu div a {
   margin-bottom: 9px;
+  margin-right: auto;
   line-height: 19px;
   text-decoration: none;
   font-size: 16px;

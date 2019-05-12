@@ -1,10 +1,7 @@
-:root {
-  margin: 0;
-  font-family: "Avenir Black",  sans-serif;
+* {
+  box-sizing: border-box;
 }
-body {
-  margin: 0;
-}
+
 @mixin aFonts {
   text-decoration: none;
   font-size: 16px;
@@ -14,23 +11,18 @@ body {
   display: flex;
   justify-content: space-between;
   .navMenu {
-    list-style: none;
-    padding:0;
-    margin: 0;
-    li {
-      float: left;
+    display: flex;
+    div {
+      margin: 15px 20px 0;
       a {
-        display:block;
+        display: block;
         @include aFonts;
-        margin: 15px;
-        margin-bottom: 0;
       }
       .avatar {
         width: 30px;
       }
       a:not(.avatar) {
         line-height: 30px;
-        text-align: center;
       }
     }
   }
@@ -45,22 +37,25 @@ body {
 footer {
   box-sizing: border-box;
   position: absolute;
-  bottom: 34px;
-  width: 100%;
+  bottom: 0;
+  width: 98%;
   background: #FFFFFF;
   box-shadow: 0px -1px 0px #E1E7ED;
-  padding: 0 20px;
+  padding: 0;
+  height: 213px;
+
   .footerMenu {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
-    margin: 40px auto;
-    max-width: 840px;
+    margin: 40px auto 0;
+    max-width: 901px;
   div {
     display: flex;
     flex-direction: column;
     a {
       margin-bottom: 9px;
+      margin-right: auto;
       line-height: 19px;
       @include aFonts;
     }

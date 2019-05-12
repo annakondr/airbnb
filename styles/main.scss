@@ -1,4 +1,217 @@
+@font-face {
+  font-family: "AvenirBook";
+  src: url(https://github.com/potyt/fonts/blob/master/macfonts/Avenir/Avenir-Book.ttf) format("truetype");
+}
+
 :root {
   margin: 0;
-  font-family: Nunito sans-serif;
+  font-family: "AvenirBook";
+  color: #3D4E61;
+  font-size: 16px;
+ }
+
+$light-color: #687C94;
+
+%border {
+  border: 1px solid #E1E7ED;
+  border-radius: 3px;
+ }
+
+%text-container {
+  width: 491px;
+  height: 121px;
+}
+p, h1, h2, h3 {
+  margin: 0;
+}
+
+main {
+  width: 901px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 36px;
+  height: 49px;
+ }
+
+.light-color {
+  color: $light-color;
+ }
+
+.title-text {
+  width: 176px;
+  height: 29px;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 28px;
+ }
+
+ li {
+  width: 82px;
+ }
+
+.describe-room {
+  @extend %text-container;
+  line-height: 24px;
+  margin-bottom: 6px;
+ }
+
+h3 {
+  margin: 0;
+  font-size: 20px;
+  margin-top: 44px;
+  width: 117px;
+  height: 29px;
+}
+
+.amenitiese {
+  display: grid;
+  grid-template-columns: 176px 176px;
+  grid-template-rows: 29px 29px;
+  grid-gap: 13px 20px;
+  margin-top: 21px;
+   .bold-text {
+     font-size: 17px;
+   }
+ }
+
+h2 {
+  font-size: 28px;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.feedback {
+  margin-top: 66px;
+}
+
+.custom-feedback {
+  position: relative;
+}
+
+.title-feedback {
+  width: 425px;
+  height: 39px;
+  margin-bottom: 34px;
+ }
+
+.custom-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #C4C4C4;
+ }
+
+.custom {
+  position: absolute;
+  top: 0;
+  left: 71px;
+}
+
+.custom-name {
+  width: 180px;
+  height: 25px;
+  font-size: 15px;
+}
+
+.feedback-date {
+  width: 163px;
+  height: 29px;
+  font-size: 20px;
+}
+
+.text-content {
+  @extend %text-container;
+  line-height: 19px;
+  margin: 0;
+}
+
+.feedback-content {
+  margin-top: 14px;
+}
+
+.adress {
+  position: relative;
+  margin-top: 15px;
+}
+
+.title-adress {
+  width: 196px;
+  height: 28px;
+  font-family: Roboto;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.small-text {
+  width: 163px;
+  height: 29px;
+  margin-bottom: 7px;
+}
+
+.contact-host {
+  border: 1px solid #118488;
+  border-radius: 4px;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  color: #118488;
+  background: #fff;
+  font-size: 16px;
+  position: absolute;
+  bottom: 0;
+}
+
+.order-form {
+  width: 330px;
+  height: 319px;
+  @extend %border;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  p {
+    margin: 30px 0 39px 0;
+  }
+ }
+
+form {
+  width: 270px;
+ }
+
+.input {
+  @extend %border;
+  width: 270px;
+  height: 50px;
+  font-size: 16px;
+  padding-left: 17px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+ }
+
+.book {
+  width: 270px;
+  height: 50px;
+  background: #FD5C63;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  border: none;
+  font-size: 16px;
+  margin-top: 8px;
  }
