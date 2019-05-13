@@ -1,10 +1,20 @@
+@font-face {
+  font-family: "AvenirBook";
+  src: url(https://github.com/potyt/fonts/blob/master/macfonts/Avenir/Avenir-Book.ttf) format("truetype");
+}
+:root {
+  margin: 0;
+  font-family: "AvenirBook";
+  color: #3D4E61;
+  font-size: 16px;
+}
+
 .input, .order-form {
   border: 1px solid #E1E7ED;
   border-radius: 3px;
 }
 
 .text-content, .describe-room {
-  width: 491px;
   height: 121px;
 }
 
@@ -13,11 +23,11 @@ p, h1, h2, h3 {
 }
 
 main {
-  width: 901px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 491px 330px;
+  grid-gap: 80px;
   margin: 0 auto;
+  justify-content: center;
 }
 
 h1 {
@@ -32,7 +42,6 @@ h1 {
 }
 
 .title-text {
-  width: 176px;
   height: 29px;
   margin: 0;
 }
@@ -58,7 +67,6 @@ h3 {
   margin: 0;
   font-size: 20px;
   margin-top: 44px;
-  width: 117px;
   height: 29px;
 }
 
@@ -90,7 +98,6 @@ h2 {
 }
 
 .title-feedback {
-  width: 425px;
   height: 39px;
   margin-bottom: 34px;
 }
@@ -109,13 +116,11 @@ h2 {
 }
 
 .custom-name {
-  width: 180px;
   height: 25px;
   font-size: 15px;
 }
 
 .feedback-date {
-  width: 163px;
   height: 29px;
   font-size: 20px;
 }
@@ -135,7 +140,6 @@ h2 {
 }
 
 .title-adress {
-  width: 196px;
   height: 28px;
   font-family: Roboto;
   font-weight: bold;
@@ -144,7 +148,6 @@ h2 {
 }
 
 .small-text {
-  width: 163px;
   height: 29px;
   margin-bottom: 7px;
 }
@@ -197,6 +200,27 @@ form {
   border: none;
   font-size: 16px;
   margin-top: 8px;
+}
+
+@media (max-width: 860px) {
+  main {
+    grid-template-columns: 591px;
+  }
+
+  .right-collumn {
+    margin-top: 20px;
+    justify-self: center;
+  }
+}
+@media (max-width: 950px) {
+  main {
+    grid-gap: 5px;
+  }
+}
+@media (max-width: 640px) {
+  main {
+    grid-template-columns: 391px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
