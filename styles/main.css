@@ -1,21 +1,10 @@
-@font-face {
-  font-family: "AvenirBook";
-  src: url(https://github.com/potyt/fonts/blob/master/macfonts/Avenir/Avenir-Book.ttf) format("truetype");
-}
-:root {
-  margin: 0;
-  font-family: "AvenirBook";
-  color: #3D4E61;
-  font-size: 16px;
-}
-
 .input, .order-form {
   border: 1px solid #E1E7ED;
   border-radius: 3px;
 }
 
 .text-content, .describe-room {
-  height: 121px;
+  height: 120px;
 }
 
 p, h1, h2, h3 {
@@ -24,7 +13,7 @@ p, h1, h2, h3 {
 
 main {
   display: grid;
-  grid-template-columns: 491px 330px;
+  grid-template-columns: 490px 330px;
   grid-gap: 80px;
   margin: 0 auto;
   justify-content: center;
@@ -34,7 +23,7 @@ h1 {
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 36px;
-  height: 49px;
+  height: 50px;
 }
 
 .light-color {
@@ -42,7 +31,7 @@ h1 {
 }
 
 .title-text {
-  height: 29px;
+  height: 30px;
   margin: 0;
 }
 
@@ -51,31 +40,31 @@ ul {
   display: flex;
   padding: 0;
   margin-top: 15px;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 li {
-  width: 82px;
+  width: 80px;
 }
 
 .describe-room {
-  line-height: 24px;
+  line-height: 25px;
   margin-bottom: 6px;
 }
 
 h3 {
   margin: 0;
   font-size: 20px;
-  margin-top: 44px;
-  height: 29px;
+  margin-top: 45px;
+  height: 30px;
 }
 
 .amenitiese {
   display: grid;
-  grid-template-columns: 176px 176px;
-  grid-template-rows: 29px 29px;
+  grid-template-columns: 180px 180px;
+  grid-template-rows: 30px 30px;
   grid-gap: 13px 20px;
-  margin-top: 21px;
+  margin-top: 20px;
 }
 .amenitiese .bold-text {
   font-size: 17px;
@@ -90,7 +79,7 @@ h2 {
 }
 
 .feedback {
-  margin-top: 66px;
+  margin-top: 65px;
 }
 
 .custom-feedback {
@@ -99,7 +88,7 @@ h2 {
 
 .title-feedback {
   height: 39px;
-  margin-bottom: 34px;
+  margin-bottom: 35px;
 }
 
 .custom-photo {
@@ -112,7 +101,7 @@ h2 {
 .custom {
   position: absolute;
   top: 0;
-  left: 71px;
+  left: 70px;
 }
 
 .custom-name {
@@ -121,17 +110,17 @@ h2 {
 }
 
 .feedback-date {
-  height: 29px;
+  height: 30px;
   font-size: 20px;
 }
 
 .text-content {
-  line-height: 19px;
+  line-height: 20px;
   margin: 0;
 }
 
 .feedback-content {
-  margin-top: 14px;
+  margin-top: 15px;
 }
 
 .adress {
@@ -144,11 +133,11 @@ h2 {
   font-family: Roboto;
   font-weight: bold;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .small-text {
-  height: 29px;
+  height: 30px;
   margin-bottom: 7px;
 }
 
@@ -163,17 +152,18 @@ h2 {
   font-size: 16px;
   position: absolute;
   bottom: 0;
+  cursor: pointer;
 }
 
 .order-form {
   width: 330px;
-  height: 319px;
+  height: 320px;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
 }
 .order-form p {
-  margin: 30px 0 39px 0;
+  margin: 30px 0 40px 0;
 }
 
 form {
@@ -184,7 +174,7 @@ form {
   width: 270px;
   height: 50px;
   font-size: 16px;
-  padding-left: 17px;
+  padding-left: 20px;
   margin-bottom: 16px;
   box-sizing: border-box;
 }
@@ -200,26 +190,17 @@ form {
   border: none;
   font-size: 16px;
   margin-top: 8px;
+  cursor: pointer;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 960px) {
   main {
-    grid-template-columns: 591px;
+    grid-template-columns: 1fr;
   }
 
   .right-collumn {
     margin-top: 20px;
     justify-self: center;
-  }
-}
-@media (max-width: 950px) {
-  main {
-    grid-gap: 5px;
-  }
-}
-@media (max-width: 640px) {
-  main {
-    grid-template-columns: 391px;
   }
 }
 
